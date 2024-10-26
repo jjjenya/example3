@@ -5,6 +5,12 @@
   gap: 7px;
 }
 
+.details__summary:hover,
+.details__summary:focus-visible {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .details__image {
   display: block;
   width: 24px;
@@ -14,16 +20,8 @@
 .details__image:hover,
 .details__image:focus-visible {
   opacity: 0.5;
-
-  @media (min-width: $desktop-width) {
-    opacity: 1;
-  }
 }
 
 .details__image:active {
   opacity: 0.8;
-
-  @media (min-width: $desktop-width) {
-    opacity: 1;
-  }
 }
