@@ -11,8 +11,8 @@
   height: 24px;
 }
 
-.details__summary:hover,
-.details__summary:focus-visible {
+.details__image:hover,
+.details__image:focus-visible {
   opacity: 0.5;
 
   @media (min-width: $desktop-width) {
@@ -20,24 +20,10 @@
   }
 }
 
-.details__summary:active {
+.details__image:active {
   opacity: 0.8;
 
   @media (min-width: $desktop-width) {
     opacity: 1;
-  }
-}
-
-
-.details__image:hover,
-.details__image:focus-visible {
-  @media (min-width: $desktop-width) {
-    opacity: 0.5;
-  }
-}
-
-.details__image:active {
-  @media (min-width: $desktop-width) {
-    opacity: 0.8;
   }
 }
