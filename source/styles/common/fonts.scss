@@ -1,0 +1,8 @@
+/* подключение шрифтов */
+@include font-face("Firasans", 400, normal, url("../../fonts/firasans/FiraSans-Regular.woff2") format("woff2"));
+@include font-face("Firasans", 500, normal, url("../../fonts/firasans/FiraSans-Medium.woff2") format("woff2"));
+@include font-face("Firasans", 600, normal, url("../../fonts/firasans/FiraSans-SemiBold.woff2") format("woff2"));
+@include font-face("Firasans", 700, normal, url("../../fonts/firasans/FiraSans-Bold.woff2") format("woff2"));
+@include font-face("Montserrat", 400, normal, url("../../fonts/montserrat/Montserrat-Regular.woff2") format("woff2"));
+@include font-face("Montserrat", 600, normal, url("../../fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2"));
+@include font-face("Montserrat", 700, normal, url("../../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"));

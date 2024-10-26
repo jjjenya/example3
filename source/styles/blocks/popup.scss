@@ -1,0 +1,41 @@
+// Попап - начало
+// .popup {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: $overlay-bg;
+//   opacity: 0.9;
+//   display: none;
+
+//   @media (min-width: $desktop-width) {
+//     background-color: transparent;
+//     opacity: 1;
+//   }
+// }
+
+// .popup__wrapper {
+//   position: absolute;
+//   bottom: 0;
+//   left: 50%;
+//   width: 100%;
+//   transform: translate(-50%, -50%);
+//   background-color: $popup-bg;
+//   opacity: 1;
+//   padding: 20px;
+
+//   border-radius: 10px 10px 0 0;
+
+//   @media (min-width: $desktop-width) {
+//     top: 50%;
+//     left: 50%;
+//     opacity: 1;
+
+//     max-width: 630px;
+//     padding: 24px;
+
+//     border-radius: $border-radius;
+//     box-shadow: 0 16px 24px 0 rgba(96, 97, 112, 0.16), 0 2px 8px 0 rgba(40, 41, 61, 0.04);
+//   }
+// }

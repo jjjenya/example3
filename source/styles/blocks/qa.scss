@@ -1,0 +1,51 @@
+.qa__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qa__item {
+  padding: 14px;
+  background-color: $background-content--second;
+  border-radius: 6px;
+}
+
+.qa__item--about {
+  @media (min-width: $desktop-width) {
+    @include visually-hidden;
+  }
+}
+
+.qa__item .qa__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.qa__item .qa__text:first-of-type {
+  margin-top: 8px;
+}
+
+.qa__title {
+  margin: 2px 0 12px;
+  margin-bottom: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.qa__subtitle {
+  margin: 0;
+}
+
+.qa__text {
+  margin: 0;
+  margin-bottom: 4px;
+
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+  }
+}
+
+.qa__symbol {
+  font-size: 13px;
+}

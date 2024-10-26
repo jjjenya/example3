@@ -1,0 +1,10 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+
+  @media (min-width: $desktop-width) {
+    gap: 48px;
+  }
+}

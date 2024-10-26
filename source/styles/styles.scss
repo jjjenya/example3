@@ -1,0 +1,25 @@
+/* GLOBAL */
+@import "./common/variables.scss";
+@import "./common/mixins";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+@import "./common/list-all.scss";
+@import "./common/summary.scss";
+
+/* BLOCKS */
+@import "./blocks/about.scss";
+@import "./blocks/button.scss";
+@import "./blocks/conditions.scss";
+@import "./blocks/container.scss";
+@import "./blocks/details.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/instructions.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/non-publication.scss";
+@import "./blocks/page.scss";
+@import "./blocks/popup.scss";
+@import "./blocks/qa.scss";
+@import "./blocks/reasons.scss";
+@import "./blocks/section.scss";

@@ -1,0 +1,11 @@
+.page__body {
+  margin: 0;
+  min-width: $mobile-width;
+}
+
+.page__container {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

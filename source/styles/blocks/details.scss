@@ -1,0 +1,43 @@
+.details__summary {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.details__image {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.details__summary:hover,
+.details__summary:focus-visible {
+  opacity: 0.5;
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+  }
+}
+
+.details__summary:active {
+  opacity: 0.8;
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+  }
+}
+
+
+.details__image:hover,
+.details__image:focus-visible {
+  @media (min-width: $desktop-width) {
+    opacity: 0.5;
+  }
+}
+
+.details__image:active {
+  @media (min-width: $desktop-width) {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,49 @@
+.about__text {
+  margin: 0;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+
+  font-size: 13px;
+  line-height: 15px;
+  text-align: left;
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.about__text::before {
+  $size: 24px;
+
+  content: "";
+  display: block;
+  width: $size;
+  height: $size;
+  background-image: url("../../icons/stack.svg#about-pic");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: $size $size;
+}
+
+.about__link {
+  text-decoration: none;
+  color: $text-color--info;
+  max-width: 230px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
+
+.about:hover,
+.about:focus-visible {
+  opacity: 0.5;
+}
+
+.about:active {
+  opacity: 0.8;
+}

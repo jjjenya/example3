@@ -1,0 +1,116 @@
+.instructions__list {
+  margin-bottom: 13px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
+
+.instructions__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 120px auto;
+  grid-auto-flow: row;
+  grid-column-gap: 8px;
+  justify-content: start;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    grid-template-columns: 228px;
+    grid-template-rows: 116px auto;
+    grid-row-gap: 12px;
+    align-items: start;
+  }
+}
+
+.instructions__item::before {
+  $size: 32px;
+
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+
+  font-family: $font--second;
+  font-size: 18px;
+  line-height: $size;
+  font-weight: 700;
+  color: $number-color;
+  text-align: center;
+
+  background-color: $background-icon;
+  background-repeat: no-repeat;
+  background-size: $size;
+
+  @media (min-width: $desktop-width) {
+    $size: 30px;
+
+    width: $size;
+    height: $size;
+
+    line-height: $size;
+    background-size: $size;
+
+    top: 98;
+  }
+}
+
+.instructions__item:first-child::before {
+  content: "1" / "Пункт первый";
+}
+
+.instructions__item:nth-child(2)::before {
+  content: "2" / "Пункт второй";
+}
+
+.instructions__item:nth-child(3)::before {
+  content: "3" / "Пункт третий";
+}
+
+.instructions__item:nth-child(4)::before {
+  content: "4" / "Пункт четвертый";
+}
+
+.instructions__item:last-child {
+  margin: 0;
+}
+
+.instructions__title {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.instructions__img {
+  margin-left: 40px;
+  margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 12px;
+    margin-left: 30px;
+  }
+}
+
+.instructions__text {
+  margin: 0;
+
+  font-family: $font--second;
+  line-height: 18px;
+  font-weight: 600;
+
+  margin-top: 12px;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+  }
+}

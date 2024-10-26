@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $padding-mobile;
+  min-width: calc($mobile-width - 2*$padding-mobile);
+
+  @media (min-width: $desktop-width) {
+    padding: 0 $padding-desktop;
+    margin: 0 auto;
+    width: 1064px;
+  }
+}

@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $button-color--bg;
+  border: 0;
+  font-family: $font--basic;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: $button-color--text;
+  text-decoration: none;
+
+  border-radius: 6px;
+
+
+  @media (min-width: $desktop-width) {
+    line-height: 22px;
+  }
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: $button--hover;
+}
+
+.button:focus-visible {
+  outline: 2px solid $border-color;
+}
+
+.button:active {
+  background-color: $button--active;
+}

@@ -1,0 +1,46 @@
+/* глобальные переменные */
+
+// Font
+$font--basic: "FiraSans", "Arial", sans-serif;
+$font--second: "Montserrat", "Arial", sans-serif;
+
+// Color
+$base-color--background: #ffffff;
+
+$text-color--base: #363a47;
+$text-color--info: #1390df;
+$text-color--attention: #c53038;
+
+$color-icons: #6d778b;
+
+$button-color--bg: #da1f2a;
+$button-color--text: #ffffff;
+
+$background-content--base: #f1f3f9;
+$background-content--second: #f9fbff;
+$background-icon: #da1f2a;
+
+$button--hover: #bc1b24;
+$button--active: #c53038;
+
+$number-color: #ffffff;
+
+$border-color: #ea8d93;
+
+// Border-radius
+$border-radius: 8px;
+
+
+// Media
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+// Padding-container
+$padding-mobile: 24px;
+$padding-tablet: 30px;
+$padding-desktop: 40px;
+
+// Popup
+$overlay-bg: #363a47;
+$popup-bg: #ffffff;
