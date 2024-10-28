@@ -12,7 +12,6 @@
   margin: 0;
   width: 100%;
 
-  // top: 62%;
   top: 0;
   left: 50%;
   transform: translate(-50%, 58%);
@@ -24,23 +23,22 @@
   line-height: 24px;
   text-align: center;
 
-  // self
   padding: 20px 26px 20px 20px;
   border-radius: 10px 10px 0 0;
 
 
-  animation: ani 1s forwards;
+  animation: uppopup 1s forwards;
+  touch-action: auto;
 
-  @keyframes ani {
+  @keyframes uppopup {
     from {
-      top: 50%;
+      top: 58%;
     }
 
     to {
       top: 0%;
     }
   }
-
 
   @media (min-width: $desktop-width) {
     animation: none;
