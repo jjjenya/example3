@@ -44,6 +44,16 @@
   text-decoration: none;
 }
 
+.conditions__link:hover,
+.conditions__link:focus-visible {
+  opacity: 0.7;
+}
+
+.conditions__link:active {
+  opacity: 0.8;
+}
+
+
 .conditions__help {
   margin: 0;
 }

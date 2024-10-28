@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+// * {
+//   outline: 1px solid red;
+//   outline-offset: none;
+// }
+
+
 body {
   background-color: $base-color--background;
   font-family: $font--basic;
@@ -12,6 +18,11 @@ body {
   line-height: 20px;
   font-weight: 400;
   color: $text-color--base;
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
 }
 
 img {

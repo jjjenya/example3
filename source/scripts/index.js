@@ -48,20 +48,39 @@ const openDetails = () => {
 openDetails();
 
 // Попап
-// const openPopup = () => {
-//   const popupMain = document.querySelector('.popup');
-//   const popupToggle = document.querySelector('.popup__toggle');
 
-//   popupMain.classList.remove('popup--nojs');
+const dialog = document.querySelector('.popup__page');
+const dialogOpener = document.querySelector('.popup--opened');
+const dialogCloser = dialog.querySelector('.popup__button--closed');
 
-//   popupToggle.addEventListener('click', () => {
-//     if (popupMain.classList.contains('popup--closed')) {
-//       popupMain.classList.remove('popup--closed');
-//       popupMain.classList.add('popup--opened');
-//     } else {
-//       popupMain.classList.add('popup--closed');
-//       popupMain.classList.remove('popup--opened');
-//     }
-//   });
-// };
-// openPopup();
+function closeOnBackDropClick({ currentTarget, target }) {
+  const dialog2 = currentTarget;
+  const isClickedOnBackDrop = target === dialog2;
+  if (isClickedOnBackDrop) {
+    close();
+  }
+}
+
+function openModalAndLockScroll() {
+  dialog.showModal();
+  document.body.classList.add('popup__scroll-lock');
+}
+
+function returnScroll() {
+  document.body.classList.remove('popup__scroll-lock');
+}
+
+function close() {
+  dialog.close();
+  returnScroll();
+}
+
+dialog.addEventListener('click', closeOnBackDropClick);
+dialog.addEventListener('cancel', () => {
+  returnScroll();
+});
+dialogOpener.addEventListener('click', openModalAndLockScroll);
+dialogCloser.addEventListener('click', (event) => {
+  event.stopPropagation();
+  close();
+});

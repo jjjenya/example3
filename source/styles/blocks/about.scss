@@ -1,18 +1,28 @@
 .about__text {
   margin: 0;
 
+  border: 0;
+  background-color: transparent;
+
   position: relative;
   display: flex;
   flex-direction: row;
+  align-items: center;
+
   gap: 9px;
 
   font-size: 13px;
   line-height: 15px;
   text-align: left;
 
+  color: $text-color--info;
+
+  max-width: 230px;
+
   @media (min-width: $desktop-width) {
     align-items: center;
     gap: 4px;
+    max-width: 100%;
   }
 }
 
@@ -27,23 +37,17 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: $size $size;
-}
 
-.about__link {
-  text-decoration: none;
-  color: $text-color--info;
-  max-width: 230px;
-
-  @media (min-width: $desktop-width) {
-    max-width: 100%;
-  }
+  flex: 0 0 $size;
 }
 
 .about:hover,
 .about:focus-visible {
   opacity: 0.5;
+  transition: $transition;
 }
 
 .about:active {
   opacity: 0.8;
+  transition: $transition;
 }
