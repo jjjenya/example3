@@ -53,22 +53,22 @@ const openPopup = () => {
   const dialogOpener = document.querySelector('.popup--opened');
   const dialogCloser = dialog.querySelector('.popup__button--closed');
 
-  function closeOnBackDropClick({ currentTarget, target }) {
+  const closeOnBackDropClick = ({ currentTarget, target }) => {
     const dialog2 = currentTarget;
     const isClickedOnBackDrop = target === dialog2;
     if (isClickedOnBackDrop) {
       close();
     }
-  }
+  };
 
-  function openModalAndLockScroll() {
+  const openModalAndLockScroll = () => {
     dialog.showModal();
     document.body.classList.add('popup__scroll-lock');
-  }
+  };
 
-  function returnScroll() {
+  const returnScroll = () => {
     document.body.classList.remove('popup__scroll-lock');
-  }
+  };
 
   function close() {
     dialog.close();
