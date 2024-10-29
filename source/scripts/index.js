@@ -47,6 +47,45 @@ const openDetails = () => {
 };
 openDetails();
 
+// Swipe
+const swipeListener = () => {
+  const swipeArea = document.getElementById('swipeArea');
+
+
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchEndX = 0;
+  let touchEndY = 0;
+
+  swipeArea.addEventListener('touchstart', (event) => {
+    touchStartX = event.changedTouches[0].screenX;
+    touchStartY = event.changedTouches[0].screenY;
+  }, false);
+
+  swipeArea.addEventListener('touchend', (event) => {
+    touchEndX = event.changedTouches[0].screenX;
+    touchEndY = event.changedTouches[0].screenY;
+    handleSwipeGesture();
+  }, false);
+
+  function handleSwipeGesture() {
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (deltaY > 0) {
+        document.body.classList.remove('popup__button--opened');
+        document.body.classList.add('popup__button--closed');
+      } else {
+        // document.body.classList.remove('popup__button--opened');
+        // document.body.classList.add('popup__button--closed');
+      }
+    }
+  }
+};
+swipeListener();
+
+
 // Попап
 const openPopup = () => {
   const dialog = document.querySelector('.popup__page');
@@ -64,6 +103,7 @@ const openPopup = () => {
   const openModalAndLockScroll = () => {
     dialog.showModal();
     document.body.classList.add('popup__scroll-lock');
+    swipeListener();
   };
 
   const returnScroll = () => {
