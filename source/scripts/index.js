@@ -88,3 +88,25 @@ const openPopup = () => {
 };
 
 openPopup();
+
+
+// new
+// const openPopupMob = () => {
+//   const isDesktop = window.matchMedia('(min-width: 1280px)');
+//   const popupOpen = document.querySelector('.popup--opened');
+//   // const popup = document.querySelector('.popup');
+
+//   // popup.addEventListener('click', () => {
+//   //   if((isDesktop.matches) && (blocks !== null)) {
+//   //     popup.style.transform = 'translate(-50%, 0%);';
+//   //     popup.style.top = '50%;';
+//   //   }
+//   // });
+
+//   // if(isDesktop.matches) {
+
+//   // }
+
+
+// };
+// openPopupMob();

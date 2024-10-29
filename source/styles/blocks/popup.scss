@@ -28,7 +28,7 @@
 
 
   animation: uppopup 1s forwards;
-  touch-action: auto;
+  overflow: auto;
 
   @keyframes uppopup {
     from {
