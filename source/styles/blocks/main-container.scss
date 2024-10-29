@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
 
-  gap: 24px;
+  gap: $gap--mobile;
 
   @media (min-width: $desktop-width) {
-    gap: 48px;
+    gap: $gap--desktop;
   }
 }

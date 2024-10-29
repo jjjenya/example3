@@ -2,6 +2,7 @@
   max-height: 634px;
   max-width: 100%;
 
+
   @media (min-width: $desktop-width) {
     max-height: 522px;
     max-width: 630px;
@@ -30,6 +31,7 @@
 
   animation: uppopup 1s forwards;
   overflow: auto;
+
 
   @keyframes uppopup {
     from {

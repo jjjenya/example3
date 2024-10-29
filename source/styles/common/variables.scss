@@ -30,7 +30,6 @@ $border-color: #ea8d93;
 // Border-radius
 $border-radius: 8px;
 
-
 // Media
 $mobile-width: 375px;
 $tablet-width: 768px;
@@ -49,3 +48,7 @@ $line-color: #e5e5e5;
 
 // Animation
 $transition: background-color 0.2s linear;
+
+// Main gap
+$gap--mobile: 24px;
+$gap--desktop: 48px;

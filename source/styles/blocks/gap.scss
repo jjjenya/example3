@@ -1,0 +1,7 @@
+.gap {
+  margin-top: calc($gap--mobile * -1);
+
+  @media (min-width: $desktop-width) {
+    margin-top: calc($gap--desktop * -1);
+  }
+}
